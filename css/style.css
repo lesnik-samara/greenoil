@@ -2647,7 +2647,7 @@ a.dropdown-toggle::after {
         padding: 2rem 5rem;
     }
     .side-menu {
-        width: 100% !important;
+        width: 70% !important;
     }
     .navbar-nav {
         margin-top: 1.5rem;
@@ -6706,27 +6706,64 @@ ul.latest_news li a:focus+span.defaultcolor {
     box-shadow: inset 0 0 100px 20px #3992bf;
 }
 
+.advantages {
+    padding-bottom: 30px;
+}
 
 .advantages .advantages_block {
     padding: 20px;
     border: 4px solid #4D67F0;
     border-image: linear-gradient(to bottom, #002ECF 0%, #00BEFF 100%);
     border-image-slice: 1;
+    margin-top: 108px;
 }
 
 
 .advantages .advantages_block img {
     margin-bottom: 20px;
+    max-width: 50%;
+    
 }
 
-.adv-bg-left {
+.adv-bg-left img {
     position: absolute;
-    bottom: 14%;
-    left: -10%;
+    bottom: 20%;
+    left: 0;
+    max-width: 40%;
 }
 
-.adv-bg-right {
+.adv-bg-right img {
     position: absolute;
-    bottom: -2%;
-    right: -10%;
+    bottom: 0;
+    right: 0;
+    max-width: 70%;
+}
+
+.google-map {
+    max-width: 100%
+}
+
+@media (max-width: 767px) {
+    .advantages .advantages_block {
+        padding: 10px;
+}
+    
+}
+
+@media (max-width: 1200px) {
+    .adv-bg-left img {
+        bottom: 27%;
+    }
+}
+
+@media (max-width: 576px) {
+    .adv-bg-left img {
+        bottom: 30%;
+    }
+}
+
+@media (max-width: 991px) {
+    .advantages .advantages_block {
+        padding: 10px;
+    }
 }
