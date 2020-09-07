@@ -6767,3 +6767,18 @@ ul.latest_news li a:focus+span.defaultcolor {
         padding: 10px;
     }
 }
+
+
+ @media (max-width: 576px) {
+     .slider-subheading{
+         font-size: 24px !important;
+     }
+
+     .slider-mainheading{
+         font-size: 28px !important;
+     }
+
+     .slider-button{
+         font-size: 26px !important;
+     }
+}
